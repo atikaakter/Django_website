@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - TreeHub</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+    <header>
+        <h1>List</h1>
+        <nav>
+            <ul>
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'about' %}">About</a></li>
+                <li><a href="{% url 'contact' %}">Contact</a></li>
+                <li><a href="{% url 'tree' %}">Tree</a></li> <!-- Link to the trees page -->
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Display tree images -->
+        <div class="image-container">
+            <img src="{% static 'images/plum.jpeg' %}" alt="Plum Image">
+            <div class="description">
+                <h2>Plum Tree</h2>
+                <p>This is a beautiful plum tree. It produces delicious fruits in summer.</p>
+            </div>
+            <img src="{% static 'images/Rubber.jpeg' %}" alt="Rubber Image">
+            <div class="description">
+                <h2>Rubber Tree</h2>
+                <p>This is a beautiful Rubber tree. It produces gum.</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <ul>
+            <li><a href="{% url 'privacy' %}">Privacy Policy</a></li>
+            <li><a href="{% url 'terms' %}">Terms of Service</a></li>
+        </ul>
+        <p>Copyright © 2024 TreeHub. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+

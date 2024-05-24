@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - My Django Website</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Welcome to TreeHub</h1>
+        <nav>
+            <ul>
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'about' %}">About</a></li>
+                <li><a href="{% url 'contact' %}">Contact</a></li>
+                <li><a href="{% url 'tree' %}">Tree</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>About Page</h2>
+        <h4>Welcome to Our Tree Hub!</h4>
+        <p>
+            Explore the fascinating world of trees with our comprehensive collection of information on uncommon tree species. From towering giants to delicate blossoms, each tree has its own unique story to tell. Whether you're an arborist, a nature enthusiast, or simply curious about the natural world around you, our tree hub is the perfect place to discover and learn.
+        </p>
+        <h4>Why Trees Matter</h4>
+        <p>  
+            Trees are not just silent observers of the world; they are essential components of our ecosystem, providing us with oxygen, shelter, food, and countless other benefits. They play a crucial role in mitigating climate change, supporting biodiversity, and enhancing the beauty of our landscapes. By understanding and appreciating the diversity of trees, we can better protect and preserve our natural environment for future generations.
+        </p>  
+        <h4>Exploring Uncommon Tree Species</h4>
+        <p>  
+            In this section, we shine a spotlight on some of the lesser-known tree species from around the world. From the enchanting Wollemi Pine of Australia to the mysterious Dragon's Blood Tree of Socotra, we delve into the unique characteristics, habitats, and cultural significance of these remarkable trees. Join us on a journey of discovery as we uncover the hidden gems of the botanical world.
+        </p>   
+        <h4>Get Involved</h4>
+        <p>   
+            We believe in the power of community and collaboration. Whether you're a tree expert, a budding photographer, or simply have a story to share, we welcome your contributions to our tree hub. Share your knowledge, experiences, and passion for trees with us, and together, we can create a vibrant and engaging resource for tree enthusiasts everywhere.
+        </p>   
+        <h4>Start Exploring</h4>
+        <p>   
+            Ready to embark on your tree adventure? Dive into our collection of blog posts, articles, and resources to learn more about the wonderful world of trees. Whether you're interested in learning about rare species, tree identification tips, or conservation efforts, you'll find plenty to discover and enjoy in our tree hub.
+       
+            Join us as we celebrate the beauty, diversity, and importance of trees in our lives and our planet.
+        </p>
+    </main>
+    
+    <footer>
+        <div class="footer-legal">
+            <p>Copyright © 2024 TreeHub. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="{% static 'scripts.js' %}"></script>
+</body>
+</html>

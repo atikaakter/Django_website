@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the body fills the viewport height */
+}
+
+header {
+    background-color: #e4d2d2;
+    color: rgb(60, 56, 56);
+    padding: 1em 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: rgb(78, 55, 55);
+    text-decoration: none;
+}
+
+main {
+    padding: 2em;
+    flex: 1; /* Allow the main section to grow to fill the available space */
+    overflow-y: auto; /* Enable vertical scrolling if content exceeds viewport height */
+}
+
+footer {
+    background-color: #e1bebe;
+    color: rgb(71, 63, 63);
+    text-align: center;
+    padding: 1em 0;
+}
+.image-container {
+    max-width: 300px; /* Set the maximum width of the image container */
+    margin: auto; /* Center the container horizontally */
+    text-align: center; /* Center the image and description */
+}
+
+.image-container img {
+    width: 100%; /* Make the image fill the container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.description {
+    margin-top: 10px; /* Add space between image and description */
+}

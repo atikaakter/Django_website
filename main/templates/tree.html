@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - My Django Website</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Tree is Life</h1>
+        <nav>
+            <ul>
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'about' %}">About</a></li>
+                <li><a href="{% url 'contact' %}">Contact</a></li>
+                <li><a href="{% url 'trees' %}">Tree</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <ul>
+            <li><a href="{% url 'trees' %}">List of Trees</a></li>
+        </ul> 
+    </main>
+    <footer>
+        <ul>
+            <li><a href="{% url 'privacy' %}">Privacy Policy</a></li>
+            <li><a href="{% url 'terms' %}">Terms of Service</a></li>
+        </ul>
+        <p>Copyright © 2024 TreeHub. All rights reserved.</p>
+    </footer>
+</body>
+</html>
